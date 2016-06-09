@@ -15,56 +15,42 @@ public class Nodo {
     private Nodo Siguiente;
     private Juego Dato;
     private Nodo Anterior;
-    private Lista Adyacentes; //Lista de juegos cercanos o a los que se puede ir
+    public Lista Adyacentes; //Lista de juegos cercanos o a los que se puede ir
     
     //Metodo constructor
-    public Nodo(Juego Dato) {
+    public Nodo(Juego Dato, Nodo Anterior, Nodo Siguiente) {
         this.Dato = Dato;//
-        Siguiente=Anterior=null;//Se colocan las referencias como vacias
+        this.Siguiente=Siguiente;
+        this.Anterior=Anterior;
         Adyacentes=new Lista();//Se inicializa la lista de juegos cercanos
     }
 
-    /**
-     * @return the Siguiente
-     */
+    //Metodos get y set
     public Nodo getSiguiente() {
         return Siguiente;
     }
 
-    /**
-     * @param Siguiente the Siguiente to set
-     */
-    public void setSiguiente(Nodo Siguiente) {
-        this.Siguiente = Siguiente;
-    }
-
-    /**
-     * @return the Dato
-     */
     public Juego getDato() {
         return Dato;
     }
 
-    /**
-     * @return the Anterior
-     */
     public Nodo getAnterior() {
         return Anterior;
     }
 
-    /**
-     * @param Anterior the Anterior to set
-     */
-    public void setAnterior(Nodo Anterior) {
-        this.Anterior = Anterior;
-    }
-
-    /**
-     * @return the Adyacentes
-     */
     public Lista getAdyacentes() {
         return Adyacentes;
     }
+
+    public void setSiguiente(Nodo Siguiente) {
+        this.Siguiente = Siguiente;
+    }
+
+    public void setAnterior(Nodo Anterior) {
+        this.Anterior = Anterior;
+    }
+    
+    
     
     
     
