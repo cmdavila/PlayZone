@@ -63,7 +63,9 @@ public class Lista {
                     Primero=Ultimo=nuevo;
                 }else{
                     Primero.setAnterior(nuevo);
+                    nuevo.setSiguiente(Primero);
                     Primero=nuevo;
+                   
                  }
         }else
             aux2.setSiguiente(nuevo);   

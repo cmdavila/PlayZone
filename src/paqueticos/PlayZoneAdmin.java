@@ -93,13 +93,12 @@ public class PlayZoneAdmin {
                                     j1.setPrecio(leerInt("Ingrese el precio"));
                                     j1.setIndiceDiversion(leerInt("Ingrese el indice de diversion"));
                                     coleccion.agregarMedio(j1, coleccion.BuscarNombre(leerString("Ingrese el juego siguiente ")));
-                                    diversion.Ordenar(j1);
+                                    //diversion.Ordenar(j1);
                                 break;
 
                                     case 2: 
                                         coleccion.ImprimirLista();
-                                        System.out.println("asdfgsadfdgfh");
-                                        diversion.ImprimirLista();
+
                                     break;
 
                                     case 3:
