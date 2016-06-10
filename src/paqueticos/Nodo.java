@@ -25,6 +25,17 @@ public class Nodo {
         Adyacentes=new Lista();//Se inicializa la lista de juegos cercanos
     }
 
+    public Nodo(Nodo Siguiente, Juego Dato) {
+        this.Siguiente = Siguiente;
+        this.Dato = Dato;
+    }
+
+    public Nodo(Juego Dato) {
+        this.Dato = Dato;
+    }
+    
+    
+
     //Metodos get y set
     public Nodo getSiguiente() {
         return Siguiente;
